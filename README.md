@@ -1,12 +1,12 @@
-# _{Application Name}_
+# _Epicodus Track Suggester_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Helps students determine which programming track would be best for them, 01/13/2017_
 
-#### By _**{List of contributors}**_
+#### By _**Elise St Hilaire**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_{Epicodus offers five different tracks for students to study. These options can be intimidating, especially for students that don't have much technical background. This quiz helps students determine which track would be best for them, based on a set of five multiple choice questions.}_
 
 ## Setup/Installation Requirements
 
@@ -20,18 +20,18 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_The webpage has to be refreshed before submitting the form a second time._
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_If you run into issues, I would appreciate if you let me know. Just message me at eliseylenore@gmail.com._
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_I used JavaScript and jQuery for the interactivity of the site. The jQuery was based on a CDN. The styling consists both of my own CSS styles and Bootstrap. I also used a CDN for Bootstrap._
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*These webpages are licensed under the MIT license.*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2016 **_Elise St Hilaire_**
