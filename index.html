@@ -3,13 +3,13 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/styles.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen">
     <meta charset="utf-8">
     <script
   src="https://code.jquery.com/jquery-3.1.1.js"
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
   crossorigin="anonymous"></script>
-    <script src="scripts.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
     <title>Epicodus Track Suggester</title>
   </head>
   <body>
@@ -21,7 +21,7 @@
           <form>
             <div class="form-group">
               <label>1. Do you enjoy obsessing over the details of how a site looks?</label>
-              <div class="radio">
+              <div class="radio" id="design">
                 <label>
                   <input type="radio" name="design">
                   Yes
@@ -36,7 +36,7 @@
             </div><!--end form-group for design-->
             <div class="form-group">
               <label>2. What size of business would you like to work for?</label>
-              <div class="radio">
+              <div class="radio" id="business-size">
                 <label>
                   <input type="radio" name="business-size">
                   A very small business, such as a start-up.
@@ -55,7 +55,7 @@
                 </label>
               </div><!--end Large-->
             </div><!--end form-group for business size-->
-            <div class="form-group">
+            <div class="form-group" id="work-type">>
               <label>3. What kind of project would you enjoy working on?</label>
               <div class="radio">
                 <label>
@@ -82,7 +82,7 @@
                 </label>
               </div><!--end content management systems-->
             </div><!--end form-group for work-type-->
-            <div class="form-group">
+            <div class="form-group" id="future">>
               <label>4. Where do you see yourself in 10 years?</label>
               <div class="radio">
                 <label>
@@ -113,13 +113,13 @@
               <label>5. Which system do you prefer?</label>
               <div class="radio">
                 <label>
-                  <input type="radio" name="system">
+                  <input type="radio" name="windows-vs-mac">
                   Windows
                 </label>
               </div><!--end Windows-->
-              <div class="radio">
+              <div class="radio" id="windows-vs-mac">
                 <label>
-                  <input type="radio" name="system">
+                  <input type="radio" name="windows-vs-mac">
                   Mac
                 </label>
               </div><!--end Mac-->
@@ -131,10 +131,6 @@
           <div class="hideMe" id="ruby-rails">
             <h4>You should take the Ruby/Rails track!</h4>
             <p>Ruby is great for building interactive web applications. It's popular with smaller companies and startups, so if you prefer working with a very small team and getting a product off the ground quickly, it may be a great fit!</p>
-          </div><!--end ruby-rails-->
-          <div class="hideMe" id="ruby-rails">
-            <h4>You should take the Ruby/Rails track!</h4>
-            <p>Ruby is great for building interactive web applications. Rails is written with Ruby and simplifies many of the common tasks associated with building web applications. It's popular with smaller companies and startups, so if you prefer working with a very small team and getting a product off the ground quickly, it may be a great fit!</p>
           </div><!--end ruby-rails-->
           <div class="hideMe" id="php-drupal">
             <h4>You should take the PHP/Drupal track!</h4>
