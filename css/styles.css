@@ -1,3 +1,25 @@
 .hideMe {
   display: none;
 }
+
+h2, h3 {
+  text-align: center;
+}
+
+.form-group {
+  margin: 35px;
+}
+
+strong {
+  color: red;
+}
+
+/*.well {
+  width: 45%;
+  display: inline-block;
+}
+
+.right {
+  float: right;
+  margin-top: 20px;
+}*/
