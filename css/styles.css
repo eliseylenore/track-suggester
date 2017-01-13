@@ -2,24 +2,73 @@
   display: none;
 }
 
+h2 {
+  margin-top: 50px;
+}
 h2, h3 {
   text-align: center;
+  font-family: 'Merriweather', serif;
 }
 
 .form-group {
   margin: 35px;
 }
 
+label, .btn {
+  font-size: 1.25em;
+  line-height: 2em;
+  font-weight: normal;
+}
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+  position: inherit;
+  margin-right: 5px;
+}
+
+.btn {
+  margin-top: 20px;
+  display: block;
+}
 strong {
   color: red;
 }
 
-/*.well {
-  width: 45%;
+.fill {
+  height: 150px;
+  display: none;
+}
+
+div.radio {
+  min-height: 175px;
+  min-width:175px;
+  border: 1px black solid;
   display: inline-block;
 }
 
-.right {
+.flexbox {
+  border: 1px black solid;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.flexbox label,
+.flexbox input {
+  flex-grow: 1;
+}
+
+/*.right {
   float: right;
-  margin-top: 20px;
+  margin-top: 10px;
 }*/
+
+@media screen and (min-width: 500px) {
+  .fill {
+    display: block;
+  }
+
+  h2 {
+    margin-top: 100px;
+  }
+}

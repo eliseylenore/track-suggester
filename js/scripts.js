@@ -1,4 +1,41 @@
 $(document).ready(function(){
+  $(".design-btn").click(function(event) {
+    console.log("Test");
+    event.preventDefault();
+    $(".design-group").hide();
+    $(".business-size-group").fadeIn();
+    console.log(design);
+  });
+
+  $(".business-size-btn").click(function(event) {
+    event.preventDefault();
+    $(".business-size-group").hide();
+    $(".work-type-group").fadeIn();
+  });
+
+  $(".design-btn").click(function(event) {
+    event.preventDefault();
+    $(".design-group").hide();
+    $(".business-size-group").fadeIn();
+  });
+
+  $(".business-size-btn").click(function(event) {
+    event.preventDefault();
+    $(".business-size-group").hide();
+    $(".work-type-group").fadeIn();
+  });
+
+  $(".work-type-btn").click(function(event) {
+    event.preventDefault();
+    $(".work-type-group").hide();
+    $(".future-group").fadeIn();
+  });
+
+  $(".future-btn").click(function(event) {
+    event.preventDefault();
+    $(".future-group").hide();
+    $(".windows-vs-group").fadeIn();
+  });
   $("form").submit(function(event){
     $(".hideMe").hide();
     event.preventDefault();
@@ -13,12 +50,16 @@ $(document).ready(function(){
       $("#css-design").show();
     } else if (businessSize === "medium" && workType === "agency") {
       $("#php-drupal").show();
-    } else if (businessSize === "large" && worktype === "android dev") {
+    } else if (businessSize === "large" && workType === "android dev") {
       $("#java-android").show();
     } else if (businessSize === "large" && windowsVsMac === "windows" || workType === "business software") {
       $("#cnet").show();
     } else if (businessSize === "small") {
       $("#ruby-rails").show();
+    } else {
+      $("#cnet").show();
     }
+    console.log("design is " + design);
+    console.log("businessSize is " + businessSize)
   });
 });
