@@ -17,26 +17,25 @@
       <h2>Need help choosing your Epicodus track?</h2>
       <h3>Just take this quiz!</h3>
       <div class="row">
-        <div class="col-lg-2"></div><!--left side div-->
-        <div class="col-lg-8">
+        <div class="col-sm-2"></div><!--left side div-->
+        <div class="col-sm-8">
           <form>
-            <div class="form-group row">
-              <label col="col-sm-12 col-form-label form-check-label">1. Do you enjoy <strong>obsessing</strong> over the details of how a site looks?</label>
-                <div class="row">
-                  <div class="radio form-check" id="design">
-                    <label class="col-sm-6 col-form-label form-check-label form-check-input">
-                      <input class="form-check-input" type="radio" name="design" value="yes">
-                      Yes!
-                      </label>
-                  </div><!--end Yes-->
-                  <div class="radio form-check" id="design">
-                    <label class="col-sm-6 col-form-label form-check-label">
-                      <input class="form-check-input" type="radio" name="design" value="no">
-                      No way.
+            <div class="form-group design-group">
+              <label>1. Do you enjoy <strong>obsessing</strong> over the details of how a site looks?</label>
+                <div class="radio" id="design">
+                  <label>
+                    <input type="radio" name="design" value="yes">
+                    Yes!
                     </label>
-                </div><!--end yes/no row-->
+                </div><!--end Yes-->
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="design" value="no">
+                    No way.
+                  </label>
+                </div><!--end No-->
             </div><!--end form-group for design-->
-            <div class="form-group">
+            <div class="form-group business-size-group hideMe">
               <label>2. What size of business would you like to work for?</label>
               <div class="radio" id="business-size">
                 <label>
@@ -57,7 +56,7 @@
                 </label>
               </div><!--end Large-->
             </div><!--end form-group for business size-->
-            <div class="form-group" id="work-type">
+            <div class="form-group work-type-group hideMe" id="work-type">
               <label>3. What kind of project would you enjoy working on?</label>
               <div class="radio">
                 <label>
@@ -84,7 +83,7 @@
                 </label>
               </div><!--end content management systems-->
             </div><!--end form-group for work-type-->
-            <div class="form-group" id="future">
+            <div class="form-group future-group hideMe" id="future">
               <label>4. Where do you see yourself in 10 years?</label>
               <div class="radio">
                 <label>
@@ -111,22 +110,24 @@
                 </label>
               </div><!--end ireland-->
             </div><!--end form-group for future-->
-            <div class="form-group">
-              <label>5. Which system do you prefer?</label>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="windows-vs-mac" value="windows">
-                  Windows
-                </label>
-              </div><!--end Windows-->
-              <div class="radio" id="windows-vs-mac">
-                <label>
-                  <input type="radio" name="windows-vs-mac" value="mac">
-                  Mac
-                </label>
-              </div><!--end Mac-->
-            </div><!--end form-group for system-->
-            <button class="btn" type="submit">Submit</button>
+            <div class="windows-vs-group hideMe">
+              <div class="form-group">
+                <label>5. Which system do you prefer?</label>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="windows-vs-mac" value="windows">
+                    Windows
+                  </label>
+                </div><!--end Windows-->
+                <div class="radio" id="windows-vs-mac">
+                  <label>
+                    <input type="radio" name="windows-vs-mac" value="mac">
+                    Mac
+                  </label>
+                </div><!--end Mac-->
+              </div><!--end form-group for system-->
+              <button class="btn" type="submit">Submit</button>
+            </div><!--end windows-vs-group hideMe-->
           </form><!--end form-->
 
           <!--hidden divs to reveal type of programmer-->
@@ -151,7 +152,8 @@
             <p>With C# and .NET, you can build internal software for businesses! Big businesses tend to like C#, and the use of .NET is quickly growing.</p>
           </div><!--end c#-.net-->
         </div><!--end middle column-->
-        <div class="col-lg-2"></div><!--right side div-->
+        <div class="col-sm-2">
+        </div><!--right side div-->
       </div><!--end row-->
     </div><!--end container-->
   </body>
