@@ -1,3 +1,10 @@
+/*********General Styles**********/
+
+body {
+  background: linear-gradient(#b3cde0, #e5f3fc) no-repeat center;
+  background-size: 400vh;
+  color: #03396c;
+}
 .hideMe {
   display: none;
 }
@@ -7,7 +14,6 @@ h2 {
 }
 h2, h3 {
   text-align: center;
-  font-family: 'Merriweather', serif;
 }
 
 .form-group {
@@ -20,6 +26,18 @@ label, .btn {
   font-weight: normal;
 }
 
+.btn {
+  background-color: #005b96;
+  color: white;
+}
+
+strong {
+  color: red;
+}
+
+
+
+/*********Radio Button Styles**********/
 .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
   position: inherit;
   margin-right: 5px;
@@ -28,9 +46,7 @@ label, .btn {
 .btn {
   margin-top: 20px;
   display: block;
-}
-strong {
-  color: red;
+  float: right;
 }
 
 .fill {
@@ -39,29 +55,37 @@ strong {
 }
 
 div.radio {
-  min-height: 175px;
+  max-height: 175px;
   min-width:175px;
-  border: 1px black solid;
-  display: inline-block;
+  display: block;
+}
+
+.radio img {
+  height: 175px;
+  max-width: 175px;
+  display: block;
+  margin-left: -20px;
+  border-radius: 10%;
+}
+
+.radio+.radio {
+  margin-top: 10px;
 }
 
 .flexbox {
-  border: 1px black solid;
   width: 100%;
-  height: 500px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .flexbox label,
 .flexbox input {
   flex-grow: 1;
+  flex-wrap: wrap;
 }
 
-/*.right {
-  float: right;
-  margin-top: 10px;
-}*/
+
 
 @media screen and (min-width: 500px) {
   .fill {

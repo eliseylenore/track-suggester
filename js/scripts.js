@@ -1,10 +1,14 @@
 $(document).ready(function(){
+  $("form#name").submit(function(event) {
+    event.preventDefault();
+    $(".name-group").hide();
+    $(".design-group").fadeIn();
+  });
+
   $(".design-btn").click(function(event) {
-    console.log("Test");
     event.preventDefault();
     $(".design-group").hide();
     $(".business-size-group").fadeIn();
-    console.log(design);
   });
 
   $(".business-size-btn").click(function(event) {
@@ -36,7 +40,7 @@ $(document).ready(function(){
     $(".future-group").hide();
     $(".windows-vs-group").fadeIn();
   });
-  $("form").submit(function(event){
+  $("form#questionnare").submit(function(event){
     $(".hideMe").hide();
     event.preventDefault();
     var design = $("input:radio[name=design]:checked").val();

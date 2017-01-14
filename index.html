@@ -21,19 +21,28 @@
       <div class="row">
         <div class="col-sm-2"></div><!--left side div-->
         <div class="col-sm-8">
-          <form>
-            <div class="form-group design-group">
+          <form id="name">
+            <div class="form-group name-group">
+              <label>Please enter your name:</label>
+              <input type="text"  class="form-control">
+              <button class="btn name-button">Next</button>
+            </div><!--end name-group-->
+          </form>
+          <form id="questionnare">
+            <div class="form-group design-group hideMe">
               <label>1. Do you enjoy <strong>obsessing</strong> over the details of how a site looks?</label>
                 <div class="flexbox">
                   <div class="radio" id="design">
                     <label>
-                      <input type="radio" name="design" value="yes">
+                    <img src="img/yes.jpg" alt="" />
+                      <input class="yes" type="radio" name="design" value="yes">
                       Yes!
                       </label>
                   </div><!--end Yes-->
-                  <div class="radio">
+                  <div class="radio ">
                     <label>
-                      <input type="radio" name="design" value="no">
+                      <img src="img/no.jpg" alt="no" />
+                      <input class="no" type="radio" name="design" value="no">
                       No way.
                     </label>
                   </div><!--end No-->
@@ -63,7 +72,7 @@
               <button class="btn business-size-btn">Next</button>
             </div><!--end form-group for business size-->
             <div class="form-group work-type-group hideMe" id="work-type">
-              <label>3. What kind of project would you enjoy working on?</label>
+              <label>3. What kind of project would you <em>enjoy</em> working on?</label>
               <div class="radio">
                 <label>
                   <input type="radio" name="work-type" value="business software">

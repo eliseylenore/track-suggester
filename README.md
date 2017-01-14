@@ -6,7 +6,7 @@
 
 ## Description
 
-_{Epicodus offers five different tracks for students to study. These options can be intimidating, especially for students that don't have much technical background. This quiz helps students determine which track would be best for them, based on a set of five multiple choice questions.}_
+_{Epicodus offers five different tracks for students to study. These options can be intimidating, especially for students that don't have much technical background. Epicodus Track Suggester helps students determine which track would be best for them, based on a set of five multiple choice questions.}_
 
 ## Setup/Installation Requirements
 
@@ -21,6 +21,8 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 ## Known Bugs
 
 _The webpage has to be refreshed before submitting the form a second time._
+
+_Created a space for user to enter their name, but haven't quite figured out how to append this value to the div shown at the end, as the input comes through a separate form. There are also some issues with the gradient background at large viewport sizes.
 
 ## Support and contact details
 
