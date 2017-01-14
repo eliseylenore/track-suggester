@@ -40,6 +40,7 @@ $(document).ready(function(){
     $(".future-group").hide();
     $(".windows-vs-group").fadeIn();
   });
+
   $("form#questionnare").submit(function(event){
     $(".hideMe").hide();
     event.preventDefault();
@@ -48,7 +49,6 @@ $(document).ready(function(){
     var workType = $("input:radio[name=work-type]:checked").val();
     var future = $("input:radio[name=future]:checked").val();
     var windowsVsMac = $("input:radio[name=windows-vs-mac]:checked").val();
-    console.log(businessSize);
 
     if (design === "yes" && future === "cocktails") {
       $("#css-design").show();
@@ -63,7 +63,4 @@ $(document).ready(function(){
     } else {
       $("#cnet").show();
     }
-    console.log("design is " + design);
-    console.log("businessSize is " + businessSize)
-  });
 });
