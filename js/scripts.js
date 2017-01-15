@@ -1,8 +1,10 @@
 $(document).ready(function(){
   $("form#name").submit(function(event) {
+    console.log("hi");
     event.preventDefault();
     $(".name-group").hide();
     $(".design-group").fadeIn();
+    console.log("hi");
   });
 
   $(".design-btn").click(function(event) {
@@ -63,4 +65,5 @@ $(document).ready(function(){
     } else {
       $("#cnet").show();
     }
+  });
 });
