@@ -63,4 +63,5 @@ $(document).ready(function(){
     } else {
       $("#cnet").show();
     }
+  });
 });
